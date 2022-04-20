@@ -55,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:clickable="true"
+        android:fontFamily="@font/ubuntu_bold"
         android:text="Check"
         app:fabSize="auto"
         app:icon="@drawable/equals_icon"
@@ -71,7 +72,8 @@
         android:layout_marginTop="20dp"
         android:text="Eww"
         android:textAlignment="center"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        app:fontFamily="@font/ubuntu_bold" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
