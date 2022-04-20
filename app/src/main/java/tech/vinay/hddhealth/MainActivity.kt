@@ -1,8 +1,7 @@
 package tech.vinay.hddhealth
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import tech.vinay.hddlifehealth.R
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
