@@ -18,13 +18,23 @@
         android:textAlignment="center"
         android:textSize="32sp" />
 
-    <com.google.android.material.textview.MaterialTextView
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="💽"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="42sp" />-->
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="💽"
-        android:textAlignment="center"
-        android:textSize="42sp" />
+        android:src="@mipmap/ic_launcher"
+        android:elevation="5dp"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
 
@@ -44,6 +54,7 @@
             android:gravity="center"
             android:hint="Power On Hours"
             android:inputType="numberSigned"
+            android:digits="0123456789."
             android:textSize="20sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,10 +79,10 @@
         android:id="@+id/health_message_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Eww"
+        android:layout_marginTop="55dp"
+        android:text=""
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="22sp"
         app:fontFamily="@font/ubuntu_bold" />
 
 
@@ -88,10 +99,30 @@
         android:id="@+id/status_message_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="Status: "
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="22sp"
         app:fontFamily="@font/ubuntu_bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="When should I replace?"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/replace_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:ignore="InvalidId" />
 
 </LinearLayout>
