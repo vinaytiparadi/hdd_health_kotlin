@@ -46,7 +46,15 @@ class MainActivity : AppCompatActivity() {
                 status_message_text_view.text="Status: 🔴 (Severe)"
             }
 
-            replace_text_view.text = "You should prefer to replace your HDD after $yearsToReplace of active time."
+
+            if(yearsToReplace<0){
+                replace_text_view.text = "You should replace it as soon as possible :("
+            }
+            else{
+                replace_text_view.text = "You should prefer to replace your HDD after $yearsToReplace years of active time."
+            }
+
+
 
 
             return@setOnClickListener
